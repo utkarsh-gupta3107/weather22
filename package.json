@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "requests": "^0.3.0"
   },
   "name": "weather",
@@ -7,9 +8,14 @@
   "description": "weather API",
   "main": "index.js",
   "scripts": {
+        "pre-deploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "install": "npm install",
+    "start":"node index.js",
+    "build":"npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
+ 
   },
   "author": "Utkarsh Gupta",
-  "license": "ISC",
-  "devDependencies": {}
+  "license": "ISC"
 }
