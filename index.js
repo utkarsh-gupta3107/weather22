@@ -2,7 +2,7 @@ const http = require("http");
 const fs = require("fs");
 const requests = require("requests");
 // html ko bula liya
-const happy = fs.readFileSync("public/index.html", "utf-8");
+const happy = fs.readFileSync("index.html", "utf-8");
 // defining replaceVal, tempval html ke andar,orgval api se
 const replaceVal = (tempval, orgval) => {
     // tempval me sabb stored hai. replace karte waqt jo chiz boli vo toh replcae hogayi baki wese ki wese temparature me aa gyi, 
